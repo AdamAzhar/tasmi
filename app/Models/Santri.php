@@ -9,5 +9,9 @@ class Santri extends Model
 {
     use HasFactory;
 
-    protected $guarded;
+    protected $table = 'santri';
+    protected $fillable = [
+        'nama_santri','juz_yang_ditasmi', 'penguji', 'tanggal'
+    ];
+    
 }
